@@ -1,0 +1,35 @@
+/*
+* @Author: 小叶
+* @Date:   2017-12-20 17:34:48
+* @Last Modified by:   小叶
+* @Last Modified time: 2017-12-26 20:10:58
+*/
+
+.nav{
+	background: #eee;
+	height: 35px;
+	line-height: 35px;
+	font-size:14px;
+}
+
+/* 用户部分 */
+
+.user-info{
+	float: left;
+}
+.user span{
+	margin-right: 5px;
+}
+.user-info .user.login{
+	display: none;
+}
+
+/* 用户导航部分 */
+
+.nav-list{
+	float: right;
+}
+.nav-list .nav-item{
+	float: left;
+	padding: 0 8px;
+}

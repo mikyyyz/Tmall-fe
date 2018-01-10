@@ -1,0 +1,56 @@
+/*
+* @Author: 小叶
+* @Date:   2017-12-26 21:15:11
+* @Last Modified by:   小叶
+* @Last Modified time: 2018-01-03 21:29:28
+*/
+
+.header .logo{
+	position: absolute;
+	left: 30px;
+	top:35px;
+	text-decoration: none;
+	font-size:35px;
+	color:#c60023;
+	font-weight: bold;
+}
+.header .search-con .input-con{
+	position: relative;
+	display: inline-block;
+}
+.header .search-con{
+	position: relative;
+	padding: 40px 0 30px 250px;
+}
+.header .search-con .search-input{
+	height:30px;
+	line-height: 30px;
+	border:2px solid #c60023;
+	width: 450px;
+	text-indent: 20px;
+	outline: none;
+}
+.header .search-con .fa{
+	position: absolute;
+	cursor: pointer;
+	top: 8px;
+	color: #c60023;
+	z-index: 999;
+}
+.header .search-con .fa-search{
+    left: 5px;
+}
+.header .search-con .fa-times-circle{
+    right: 10px;
+    display: none;
+}
+.header .search-con .search-btn{
+	position: absolute;
+	height: 34px;
+	width: 60px;
+	cursor: pointer;
+	background: #c60023;
+	outline: none;
+	border: none;
+	color: #fff;
+}

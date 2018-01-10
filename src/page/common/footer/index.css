@@ -1,0 +1,36 @@
+/*
+* @Author: 小叶
+* @Date:   2017-12-26 20:20:34
+* @Last Modified by:   小叶
+* @Last Modified time: 2017-12-27 19:09:06
+*/
+body{
+	position: relative;
+	height: 100%;
+}
+.footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background: #aaa;
+	color: #eee;
+	margin-top: 150px;
+}
+.link-list{
+	text-align: center;
+	line-height: 30px;
+}
+.link-list a{
+	text-decoration: none;
+	color: #eee;
+	padding: 0 6px;
+	font-size:14px; 
+}
+.link-list a:hover{
+	color: #fff;
+}
+.copyright{
+	text-align: center;
+	font-size: 13px;
+}

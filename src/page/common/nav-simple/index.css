@@ -1,0 +1,18 @@
+/*
+* @Author: 小叶
+* @Date:   2017-12-20 17:09:28
+* @Last Modified by:   小叶
+* @Last Modified time: 2017-12-20 17:32:57
+*/
+
+.nav-simple{
+	background: #fff;
+	border-bottom: 1px solid #ccc;
+}
+.w .logo{
+	font-size:35px;
+	color:#c60023;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+}

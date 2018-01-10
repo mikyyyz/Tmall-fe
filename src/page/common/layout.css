@@ -1,0 +1,90 @@
+/*
+* @Author: 小叶
+* @Date:   2017-12-05 22:18:25
+* @Last Modified by:   小叶
+* @Last Modified time: 2017-12-20 16:49:45
+*/
+
+/* 重置样式 */
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: #f6f6f6;
+	font-size:12px/1.5 tahoma, arial, Microsoft YaHei,sans-serif;
+}
+li{
+	list-style: none;
+}
+img{
+	display: block;
+	border: none;
+}
+label{
+	cursor: pointer;
+}
+input[type='checkbox']{
+	cursor: pointer;
+}
+/* 定宽布局 */
+.w{
+	width: 1080px;
+	margin: 0 auto;
+	position: relative;
+    overflow: hidden;
+}
+
+/* 通用样式 */
+/* 隐藏类 */
+.hide{
+	display: none;
+}
+
+/* link链接 */
+.link{
+	color:#999;
+	cursor: pointer;
+	text-decoration: none;
+}
+.link:hover{
+	color:#e80012;
+}
+.link-text{
+	color:#999;
+	text-decoration: none;
+}
+/* 按钮 */
+
+.btn{
+	border: none;
+	display: inline-block;
+	padding: 0 30px;
+	outline: none;
+	height: 40px;
+	line-height: 40px;
+	vertical-align: middle;
+	text-align: center;
+	color: #fff;
+	background: #c60023;
+	cursor: pointer;
+	font-style: 17px;
+	border-radius: 5px;
+}
+.btn:hover{
+	opacity: 0.8;
+}
+.btn-min{
+	height: 30px;
+	line-height: 30px;
+	font-size:15px;
+	padding: 0 20px;
+}
+/* loading */
+.loading{
+	width: 32px;
+	height: 32px;
+	background: url('../../image/loading.gif') no-repeat;
+	margin: 10px auto;
+	opacity: .5;
+}

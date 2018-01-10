@@ -2,7 +2,7 @@
 * @Author: 小叶
 * @Date:   2017-12-05 18:23:30
 * @Last Modified by:   小叶
-* @Last Modified time: 2017-12-06 20:13:05
+* @Last Modified time: 2018-01-03 22:07:36
 */
 
 const path              = require('path');
@@ -30,6 +30,7 @@ var config = {
 		'common': ['./src/page/common/index.js'],
 		'index' : ['./src/page/index/index.js'],
 		'login' : ['./src/page/login/index.js'],
+        'result': ['./src/page/result/index.js']
 	},
 	output : {
 		path : __dirname + '/dist/',
@@ -39,10 +40,20 @@ var config = {
 	externals : {
 		'jquery' : 'window.jQuery'
 	},
+    resolve : {
+    	alias : {
+    		util         : __dirname + '/src/util',
+            node_modules : __dirname + '/node_modules',
+    		page         : __dirname + '/src/page',
+    		image        : __dirname + '/src/image',
+    		service      : __dirname + '/src/service'
+    	}
+    },
     module : {
     	loaders : [
     	    {test:/\.css$/,loader:ExtractTextPlugin.extract('style-loader','css-loader')},
-    	    {test:/\.(jpg|png|gif|woff|svg|eot|ttf)\??.*$/,loader:'url-loader?limit=100&name=resource/[name].[ext]'}           
+    	    {test:/\.(jpg|png|gif|woff|svg|eot|ttf)\??.*$/,loader:'url-loader?limit=100&name=resource/[name].[ext]'},
+            {test:/\.string$/,loader:'html-loader'}           
     	]
     },
 	plugins : [
@@ -55,7 +66,8 @@ var config = {
         new ExtractTextPlugin('css/[name].css'),
         //html模板的处理
         new htmlWebpackPlugin(getHtmlConfig('首页','index')),
-        new htmlWebpackPlugin(getHtmlConfig('登录','login'))
+        new htmlWebpackPlugin(getHtmlConfig('登录','login')),
+        new htmlWebpackPlugin(getHtmlConfig('操作结果','result'))
 	]
 }
 

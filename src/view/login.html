@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%= require('html-loader!./layout/html-head.html') %>
+    <%= require('html-loader!./layout/html-common.html') %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
 <body>
 	<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>
 </body>
